@@ -1,0 +1,41 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: $darkCyan;
+  position: relative;
+
+  &__top {
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 400px;
+    transform: rotate(180deg);
+    position: absolute;
+    background-image: url("/images/bg-pattern-top.svg");
+    background-repeat: no-repeat;
+
+    @include breakpoint-up(large) {
+      width: 693px;
+      height: 445px;
+    }
+  }
+
+  &__bottom {
+    bottom: 0;
+    right: 0;
+    width: 230px;
+    height: 400px;
+    position: absolute;
+    background-image: url("/images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    @include breakpoint-up(large) {
+      width: 693px;
+      height: 445px;
+    }
+  }
+}

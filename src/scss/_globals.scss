@@ -1,0 +1,25 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.text-bold {
+  font-weight: $weight-bold;
+}
+
+.text-grey {
+  color: $darkGray;
+}
